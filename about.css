@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    
+    background-color: #332a28;
+
+}
+
+h1,
+h2 {
+    color: white;
+} 
+ 
+.about-us {
+    color: rgb(224, 210, 132);
+
+    padding: 5px;
+    text-align: left;
+    width: 100%;
+    margin: 0.5em;
+}
+
+.about-us h2 {
+    color: rgb(224, 210, 132);
+
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.about-us p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: white;
+
+}
+
+.about-us ul {
+    list-style-type: square;
+    margin: 20px 0;
+}
+
+.about-us ul li {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+ 
+
+   
+ 
+.navbar {
+     
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;  
+    top: 0;
+    width: 100%;
+    background-color: none;
+    padding: 10px;
+    z-index: 111;
+    height: 60px;
+    border-radius: 0.5em;
+    border: 1px red;
+    box-shadow: 5px 5px 7px 0px #0000003f;
+}
+
+.navbar .logo-section {
+    display: flex;
+    align-items: center;
+    margin-left: 45px;
+}
+
+.navbar .logo-section img {
+    height: 50px;
+    border-radius: 1.8em;
+    margin-right: 10px;
+}
+
+.navbar .logo-section .text {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo-section .text h1,
+.navbar .logo-section .text h2 {
+    font-family: 'Dancing Script', cursive;
+    color: rgb(255, 215, 0);
+    margin: 0; 
+}
+
+.navbar .logo-section .text h1 {
+    font-size: 40px;
+}
+
+.navbar .logo-section .text h2 {
+    font-size: 40px;
+    margin-left: 15px;
+}
+
+.nav-option {
+    display: flex;
+    align-items: center;
+    margin-right: 45px;  
+}
+
+.nav-option ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-option li {
+    margin-right: 20px;
+}
+
+.nav-option a {
+    color: rgb(255, 254, 247);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav-option a:hover {
+    color: #B8860B;
+}
+
+footer {
+    background-color: #332a28;
+    padding: 20px;
+    text-align: center;
+    color: rgb(224, 210, 132);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .social-icons {
+    margin-top: 10px;
+    display: flex;
+     
+    justify-content: center;
+     
+    gap: 20px;
+     
+    align-items: center;
+     
+}
+
+footer .social-icons img {
+    margin: 0;
+    border-radius: 3px;
+    
+    background-color: transparent;
+     
+    display: block;
+     
+    width: auto;
+     
+}
+
+footer .social-icons a {
+    text-decoration: none;
+     
+}

@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+ 
+.navbar {
+    position: fixed;
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    top: 0;
+    width: 100%;
+    background-color:none;
+    padding: 15px;
+    /* text-align: center; */
+    z-index: 222;
+    height: 70px;
+    border-radius: 0.5em;
+    border:1px red;
+    box-shadow: 5px 5px 7px 0px #0000003f;
+     
+
+
+}
+.navbar .logo-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 45px;
+  
+  }
+.navbar .logo-section img {
+    height: 50px;
+    border-radius: 1.8em;
+  
+    margin-right: 10px;
+  
+  }
+  .navbar .logo-section .text h1 {
+    font-size: 40px;
+  
+    color: rgb(255, 215, 0);
+
+    display: flex;
+    /* margin-left:5px; */
+    /* font-family:cursive; */
+    font-family: 'Dancing Script', cursive;
+     
+
+    /* justify-content: left; */
+  
+  }
+
+  .navbar .logo-section .text h2 {
+    font-size: 40px;
+    display: flex;
+    margin-left: 15px;
+    /* font-family:cursive; */
+    font-family: 'Dancing Script', cursive;
+    color: rgb(255, 215, 0);
+
+
+
+  
+  }
+
+.navbar .logo-section .text {
+    color: #f2f2f2;
+    display: flex;
+    /* flex-direction: row; */
+  
+  }
+  
+   
+  
+  
+
+
+-----
+ 
+.nav-option{
+    justify-content:right;
+    margin-left: 60%;
+    
+}
+
+.navbar ul {
+    list-style-type: none;
+}   
+
+.navbar li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar a {
+     
+    flex-direction: column;
+    color: rgb(255, 254, 247);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    /* color: #ce669a; */
+    color: #B8860B;
+
+}
+
+ 
+.hero-section {
+    height: 100vh;
+    background-image: url('restaurant-image.jpg');  
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border:1px red;
+
+}
+
+.overlay {
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1px rgb(112, 78, 78);
+
+}
+
+.overlay h1 {
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #332a28;
+    padding: 20px;
+    text-align: center;
+    color: rgb(224, 210, 132);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .social-icons {
+    margin-top: 10px;
+    display: flex;                 
+    justify-content: center;        
+    gap: 20px;                     
+    align-items: center;            
+}
+
+footer .social-icons img {
+    margin: 0;
+    border-radius: 3px;             
+    background-color: transparent; 
+    display: block;                 
+    width: auto;                    
+}
+
+footer .social-icons a {
+    text-decoration: none;        
+}
+
+
+ 
+.slideshow {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+ 
+.slide-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    animation: slideAnimation 9s infinite;
+    box-shadow: 5px 5px 7px 0px #0000003f;
+
+
+    
+}
+
+.slide-image:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.slide-image:nth-child(2) {
+    animation-delay: 3s;
+}
+
+.slide-image:nth-child(3) {
+    animation-delay: 6s;
+}
+
+/* Animation for slideshow */
+@keyframes slideAnimation {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.textt{
+    display: flex;
+    justify-content: space-around;
+    background-color: #332a28;
+    padding: 5em ;
+
+     
+}
+
+.textt p{
+    line-height:2em;
+}
+.textt h2{
+    color: #B8860B;
+}
+.textt1 {
+    color: white;
+}
+.textt2 {
+    color: white;
+   
+}
+
+.textt3 {
+    color: white;
+   
+}
+
+/*  */
+.welcome-section {
+    padding: 40px;
+    max-width: 100%;
+    border-bottom: 2px solid #B8860B; 
+    border-radius: 1px;
+    border-bottom-style:outset;
+    background-color: #332a28; 
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+ 
+.welcome-section h1 {
+    font-size: 42px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    color: #B8860B; 
+}
+
+ 
+.welcome-section h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color:rgb(21, 121, 116);  
+}
+
+ 
+.decorative-icon {
+    font-size: 25px;
+    color: #B8860B;
+    margin: 20px 0;
+}
+
+ 
+.welcome-section p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #ffffff;  
+}
+ 
+ 
